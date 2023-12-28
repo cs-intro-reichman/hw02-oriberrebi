@@ -4,13 +4,12 @@ class OneOfEachStats1 {
 public static void main(String args[]) {
 
 	Integer t = Integer.parseInt(args[0]);
-	Integer seed = Integer.parseInt(args[1]);
 	Integer two_k = 0;
 	Integer three_k = 0;
 	Integer four_k = 0;
 	Double sum = 0.0;
 
-	Random random = new Random(seed);
+	Random random = new Random();
 
 	for (int i = t; (i> 0); i = (i - 1)) {
 
