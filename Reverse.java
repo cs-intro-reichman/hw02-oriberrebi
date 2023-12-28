@@ -13,7 +13,7 @@ while (arg_len >= 0){
 
 char middle;
 if (input_arg.length()%2 == 0) {
-	middle = 0
+	middle = input_arg.charAt((input_arg.length()-1)/2);;
 }
 else {
 	middle = input_arg.charAt(input_arg.length()/2);
