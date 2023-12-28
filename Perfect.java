@@ -9,7 +9,10 @@ public static void main(String args[]) {
 	for (int i = 1; (i< N); i++) {
 		if ((N%i) == 0) {
 				sum += i;
-				s += i + " + "; 
+				s += i; 
+				if (i< N-1) {
+					s += "+";
+				}
 		}
 	}
 
