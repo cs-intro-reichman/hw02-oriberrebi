@@ -10,8 +10,8 @@ public static void main(String args[]) {
 		if ((N%i) == 0) {
 				sum += i;
 				s += i; 
-				if (i< N-1) {
-					s += "+";
+				if (i< N-1 && N % i == 0) {
+					s += " + ";
 				}
 		}
 	}
