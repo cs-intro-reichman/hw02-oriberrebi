@@ -1,6 +1,6 @@
 import java.util.Random;
 
-class OneOfEachStats1 {
+class OneOfEachStats {
 public static void main(String args[]) {
 
 	Integer t = Integer.parseInt(args[0]);
