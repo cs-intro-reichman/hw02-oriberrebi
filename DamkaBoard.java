@@ -11,7 +11,7 @@ public static void main(String args[]) {
 				b += "* ";		
 			}	
 
-			if (i%2 != 0) {
+			if (i%2 == 0) {
 				System.out.println(" " + b);
 				}
 		else {
