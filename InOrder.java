@@ -1,9 +1,19 @@
-/**
- *  Generates and prints random integers in the range [0,10),
- *  as long as they form a non-decreasing sequence.
- */
-public class InOrder {
-	public static void main (String[] args) {
-		//// Write your code here
+import java.util.concurrent.ThreadLocalRandom;
+class InOrder {
+public static void main(String args[]) {
+
+	Integer number = (int) (Math.random()*10);
+	System.out.println(number);
+
+	while (number<10) {
+		Integer i = (int) (Math.random()*10);
+		if (i>= number) {	
+			System.out.println(i);
+			number = i;
+			}
+		else {
+			number=10;
+		}
 	}
+}
 }
