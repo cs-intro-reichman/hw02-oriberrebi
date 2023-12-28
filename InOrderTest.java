@@ -1,5 +1,5 @@
 import java.util.concurrent.ThreadLocalRandom;
-class InOrder {
+class InOrderTest {
 public static void main(String args[]) {
 
 	Integer number = (int) (Math.random()*10);
