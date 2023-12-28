@@ -21,7 +21,7 @@ public static void main(String args[]) {
 		sum = 0.0;
 
 			while ((g<=0) || (b<=0)) {
-				stat = Math.random();
+				stat = random.nextDouble();
 				if (stat>0.5) {
 					b++;
 					sum++;
