@@ -61,8 +61,13 @@ public static void main(String args[]) {
 		System.out.println("Number of families with 2 children: " + two_k);
 		System.out.println("Number of families with 3 children: " + three_k);
 		System.out.println("Number of families with 4 or more children: " + four_k);
-		System.out.println("The most common number of children is " + common + ".");
 
+		if (common==4){
+			System.out.println("The most common number of children is " + common + "or more.");
+		}
+		else{
+			System.out.println("The most common number of children is " + common + ".");
+		}
 }
 }
 
