@@ -8,31 +8,28 @@ public static void main(String args[]) {
 	Integer two_k = 0;
 	Integer three_k = 0;
 	Integer four_k = 0;
-	Double sum = 0.0;
+	Integer totalChildren = 0;
 
 	Random random = new Random(seed);
 
 	for (int i = t; (i> 0); i = (i - 1)) {
 
-		String p = "";
 		Integer g = 0;
 		Integer b = 0;
 		Double stat = 0.0;
-		sum = 0.0;
 
 			while ((g<=0) || (b<=0)) {
 				stat = random.nextDouble();
 				if (stat>0.5) {
 					b++;
-					sum++;
 				}
 				else {
 					g++;
-					sum++;
 				}
 			}
 
-		Integer sum2 = (int) sum.doubleValue();
+		Integer sum2 = b + g;
+		totalChildren += sum2;
 
 		switch (sum2) {
 			case 2: two_k++;
@@ -58,15 +55,12 @@ public static void main(String args[]) {
 			}
 		}
 
-		Integer fSum = ((two_k*2) + (three_k*3) + (four_k*4));
-		Double dSum = (double) fSum;
-		Double tt = (double) t;
-		Double avg = (fSum/tt);
+		Double avg = ((double) totalChildren/(double) t);
 
 		System.out.println("Average: " + avg + " children to get at least one of each gender.");
 		System.out.println("Number of families with 2 children: " + two_k);
 		System.out.println("Number of families with 3 children: " + three_k);
-		System.out.println("Number of families with 4 children: " + four_k);
+		System.out.println("Number of families with 4 or more children: " + four_k);
 		System.out.println("The most common number of children is " + common + ".");
 
 }
