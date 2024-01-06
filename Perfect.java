@@ -8,9 +8,9 @@ public static void main(String args[]) {
 
 	for (int i = 1; (i< N); i++) {
 		if ((N%i) == 0) {
-				sum += i;
+				sum += i; // #feeedback - note the indentation here.
 				s += i; 
-				if (i< N/2 && N % i == 0) {
+				if (i< N/2 && N % i == 0) { // #feedback - note that if we are here then N%i=0, no need to check it again.
 					s += " + ";
 				}
 		}
